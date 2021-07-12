@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카페좋은</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+
+
+    
+    
+    
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/jquery-1.12.4.js"></script>
+    <script src="script/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('#drink').bxSlider({
+              auto: true,               // 자동으로 애니메이션 시작
+              speed: 3000,               // 애니메이션 속도
+              pause: 5000,              // 애니메이션 유지 시간 (1000은 1초)
+              mode: 'horizontal',       // 슬라이드 모드('fade', 'horizontal(가로방향)', 'vertical(세로방향)')
+              autoControls: true,       // 시작 및 중지버튼 보여짐
+              pager: false,              // 페이지 표시 보여짐
+              captions: false,           // 이미지 위에 텍스트를 넣을 수 있음
+          });
+        });
+
+
+        $(document).ready(function(){
+          $('#bakery').bxSlider({
+              auto: true,               // 자동으로 애니메이션 시작
+              speed: 4000,               // 애니메이션 속도
+              pause: 6000,              // 애니메이션 유지 시간 (1000은 1초)
+              mode: 'horizontal',       // 슬라이드 모드('fade', 'horizontal(가로방향)', 'vertical(세로방향)')
+              autoControls: true,       // 시작 및 중지버튼 보여짐
+              pager: false,              // 페이지 표시 보여짐
+              captions: false,           // 이미지 위에 텍스트를 넣을 수 있음
+          });
+        });
+      </script>
+</head>
+<body>
+    <!-------------- header 시작--------------->
+    <header>
+        <div class="header_bg">
+            <div class="center">
+                <div class="login_menu">
+                    <ul>
+                        <li><a href="#">HOME</a></li> |
+                        <li><a href="#">LOGIN</a></li> |
+                        <li><a href="#">SITEMAP</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="logo_navi">
+            <div class="logo">
+                <a href="#"><img src="images/Main_imgs/logo2.png" alt="카페좋은"></a>
+            </div>
+
+            <div class="header_navi">
+                <ul class="menu">
+                    <li>
+                        <a href="#">HOME</a>
+                        <ul class="sub_menu">
+                            <li><a href="about.html">좋은 스토리</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">MENU</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">에스프레소 베이스</a></li>
+                            <li><a href="#">밀크베이스</a></li>
+                            <li><a href="#">베버리지</a></li>
+                            <li><a href="#">스무디&프라페</a></li>
+                            <li><a href="#">스페셜</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">COMMUNITY</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">1:1문의하기</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">FRANCHISE</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">가맹문의</a></li>
+                            <li><a href="#">인테리어</a></li>
+                            <li><a href="#">개설비용</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu_bg"></div>
+    </header>
+    <!-------------- header 끝 --------------->
+
+
+
+
+    <!-------------- main banner 시작 ------------------->
+    <section id="mainBanner">
+        <article class="main_img">
+            <a href="#">
+                <img src="images/Main_imgs/main_banner.jpg" alt="메인배너">
+            </a>
+        </article>
+
+        <!-- <article class="sub_img">
+            <a href="#">
+                <img src="images/Main_imgs/sub_banner.jpg" alt="서브배너">
+            </a>
+        </article> -->
+    </section>
+    <!-------------- main banner 끝 ---------------------->
+
+
+    <!-------------- mainContents 시작 ------------------->
+    <section id="mainContents">
+        <article class="first_content">
+            <h2 class="main_contents_title">TODAY'S COFFEE</h2>
+            <div class="img_slide" id="drink">
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/Contents_first/아이스아메리카노.jpg" alt="아이스아메리카노">
+                                <span class="drink_text">
+                                    <p class="name">아이스아메리카노</p>
+                                    <p class="price">4,500원</p>
+                                </span>
+                            </a>
+                        
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/Contents_first/카페라떼.jpg" alt="카페라떼">
+                                <span class="drink_text">
+                                    <p class="name">카페라떼</p>
+                                    <p class="price">5,500원</p>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/Contents_first/모카라떼.png" alt="모카라떼">
+                                <span class="drink_text">
+                                    <p class="name">모카라떼</p>
+                                    <p class="price">5,500원</p>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/Contents_first/레몬에이드.jpg" alt="레몬에이드">
+                                <span class="drink_text">
+                                    <p class="name">레몬에이드</p>
+                                    <p class="price">5,000원</p>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="images/Contents_first/블루레몬에이드.jpg" alt="블루레몬에이드">
+                                    <span class="drink_text">
+                                        <p class="name">블루레몬에이드</p>
+                                        <p class="price">5,000원</p>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/Contents_first/자바칩프라페.jpg" alt="자바칩프라페">
+                                    <span class="drink_text">
+                                        <p class="name">자바칩 프라페</p>
+                                        <p class="price">6,000원</p>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/Contents_first/쿠키 프라페.jpg" alt="쿠키프라페">
+                                    <span class="drink_text">
+                                        <p class="name">쿠키 프라페</p>
+                                        <p class="price">6,000원</p>
+                            
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/Contents_first/배 프라페.png" alt="배프라페">
+                                    <span class="drink_text">
+                                        <p class="name">배 프라페</p>
+                                        <p class="price">5,700원</p>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </article>
+
+
+        <article class="second_content">
+            <h2 class="main_contents_title">TODAY'S BAKERY</h2>
+            <div class="img_slide" id="bakery">
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/Contents_second/img1.jpg" alt="">
+                                <span class="bakery_text">
+                                    <p class="name">초코칩쿠키</p>
+                                    <p class="price">2,500원</p>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/Contents_second/img2.jpg" alt="">
+                                <span class="bakery_text">
+                                    <p class="name">누텔라크로플</p>
+                                    <p class="price">4,000원</p>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/Contents_second/img3.jpg" alt="">
+                                <span class="bakery_text">
+                                    <p class="name">스프링클 케이크 도넛</p>
+                                    <p class="price">3,500원</p>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/Contents_second/img4.jpg" alt="">
+                                <span class="bakery_text">
+                                    <p class="name">딸기 롤팬케이크</p>
+                                    <p class="price">4,500원</p>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/Contents_second/img5.jpg" alt="">
+                                <span class="bakery_text">
+                                    <p class="name">체리파이</p>
+                                    <p class="price">3,500원</p>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/Contents_second/img6.jpg" alt="">
+                                <span class="bakery_text">
+                                    <p class="name">크로플</p>
+                                    <p class="price">3,500원</p>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-------------- mainContents 끝 ------------------->
+
+
+
+
+
+    <!-------------- subContents 시작 ------------------>
+    <section id="subContents">
+        <article class="sub_contents_box">
+            <h2 class="sub_contents_title">#분위기좋은카페 #커피맛집 #또먹고싶다</h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/Contents_last/1.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/Contents_last/10.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/Contents_last/11.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/Contents_last/12.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/Contents_last/17.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/Contents_last/2.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/Contents_last/3.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/Contents_last/4.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/Contents_last/5.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/Contents_last/6.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/Contents_last/7.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/Contents_last/8.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </article>
+        <a href="#" id="moveBox">OUR INSTAGRAM - @COFFEEJOEUN</a>
+    </section>
+    <!-------------- subContents 끝 ------------------>
+
+
+
+
+    <!-------------- footer 시작 --------------------->
+    <footer>
+        <div class="center">
+            <div class="footer_cont">
+                <div class="footer_menu">
+                    <ul>
+                        <li><a href="#">홈페이지 이용약관</a></li> |
+                        <li><a href="#">개인정보처리방침</a></li> |
+                        <li><a href="#">영상정보처리기기운영방침</a></li> |
+                        <li><a href="#">멤버스카드이용약관</a></li>
+                    </ul>
+                </div>
+                <div class="footer_text">
+                    <p>
+                        대표자 : 최상민 | 사업자 등록번호 : 120-86-00731
+                    </p>
+                    <p>
+                        광주광역시 서구 농성동 경열로 3 | 고객센터 062-376-3625 | E-mail : sangmin@naver.com
+                    </p>
+                    <p>
+                        copyright&copy; cafejoeun. All right reserved.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="sns">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/footer_sns/facebook.png" alt="페이스북">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/footer_sns/instagram.png" alt="인스타그램">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/footer_sns/naver.png" alt="네이버블로그">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/footer_sns/twitter.png" alt="트위터">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+   
+</body>
+</html>
